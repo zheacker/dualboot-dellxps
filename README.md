@@ -41,9 +41,9 @@ Gameplan: Installing Windows 10 is self explanatory/already done, but you'll nee
 
 * fastboot info [here](http://askubuntu.com/questions/452071/why-disable-fast-boot-on-windows-8-when-having-dual-booting) and [here](http://superuser.com/questions/211079/what-do-i-have-to-take-care-of-when-hibernating-both-ubuntu-and-windows-dual-bo).
 
-Shrink Windows partition (C:).
+**UPDATE**: fastboot is a UEFI setting, don't need to do anything there. You **should** disable fast startup under Control Panel > Power > Change power buttons. This is because Fast Startup uses a kind of hibernation that will maintain and freeze write ownership of the drive, and this won't play nice with another OS.
 
-**ANYTHING ELSE???**
+Shrink Windows partition (C:).
 
 Then install Ubuntu. Create live USB. Install. Swap? Shared partition? (Hibernation and fastboot?) Where does `/boot` go, separate partition?
 
